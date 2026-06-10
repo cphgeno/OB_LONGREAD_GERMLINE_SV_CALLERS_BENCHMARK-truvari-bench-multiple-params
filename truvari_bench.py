@@ -154,7 +154,8 @@ def main():
         '22': ["--pctseq", "0", "--pctsize", "0.25", "--pctovl", "0", "--refdist", "500", "--passonly", "--dup-to-ins"],
         '23': ["--pctseq", "0", "--pctsize", "0.7", "--pctovl", "0", "--refdist", "500", "--passonl", "--dup-to-ins"],
         '24': ["--pctsize", "0.7", "--pctsize", "0.7", "--passonly", "--refdist", "100"],
-        '25': ["--pctsize", "0.7", "--pctsize", "0.7", "--passonly", "--refdist", "50"]
+        '25': ["--pctsize", "0.7", "--pctsize", "0.7", "--passonly", "--refdist", "50"],
+        '26': ["--pctseq", "0", "--pctsize", "0.7", "--pctovl", "0", "--refdist", "500", "--passonly"],
     }
 
     for key, settings in dict_settings.items():
