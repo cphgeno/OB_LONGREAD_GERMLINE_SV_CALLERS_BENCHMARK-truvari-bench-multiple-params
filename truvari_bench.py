@@ -141,7 +141,20 @@ def main():
         '9': ["--pctsize", "0.7", "--typeignore", "--passonly"],
         '10': ["--pctseq", "0.9", "--pctsize", "0.9", "--pctovl", "0.8", "--refdist", "50", "--typeignore", "--passonly"],
         '11': ["--pctseq", "0.9", "--pctsize", "0.9", "--pctovl", "0.8", "--refdist", "50", "--passonly"],
-        '12': ["--pctseq", "0", "--typeignore", "--passonly"]
+        '12': ["--pctseq", "0", "--typeignore", "--passonly"],
+        '13': ["--pctseq", "0.9", "--pctsize", "0", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '14': ["--pctseq", "0.75", "--pctsize", "0", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '15': ["--pctseq", "0.5", "--pctsize", "0", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '16': ["--pctseq", "0.25", "--pctsize", "0", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '17': ["--pctseq", "0", "--pctsize", "0", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '18': ["--pctseq", "0", "--pctsize", "0.9", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '19': ["--pctseq", "0", "--pctsize", "0.75", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '20': ["--pctseq", "0", "--pctsize", "0.5", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '21': ["--pctseq", "0", "--pctsize", "0.25", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '22': ["--pctseq", "0", "--pctsize", "0.25", "--pctovl", "0", "--refdist", "500", "--passonly", "--dup-to-ins"],
+        '23': ["--pctseq", "0", "--pctsize", "0.7", "--pctovl", "0", "--refdist", "500", "--passonl", "--dup-to-ins"],
+        '24': ["--pctsize", "0.7", "--pctsize", "0.7", "--passonly", "--refdist", "100"],
+        '25': ["--pctsize", "0.7", "--pctsize", "0.7", "--passonly", "--refdist", "50"]
     }
 
     for key, settings in dict_settings.items():
