@@ -109,6 +109,7 @@ def main():
     )
     parser.add_argument(
         "--variant_calling.vcfs.gz",
+        "--variant_calling.svtype.filtered.no.TRA_BND.vcfs.gz",
         dest="variant_calling_vcfs",    # valid Python attribute name
         required=True,
         help="Path to VCF files"
@@ -155,7 +156,8 @@ def main():
         '23': ["--pctseq", "0", "--pctsize", "0.7", "--pctovl", "0", "--refdist", "500", "--passonl", "--dup-to-ins"],
         '24': ["--pctsize", "0.7", "--pctsize", "0.7", "--passonly", "--refdist", "100"],
         '25': ["--pctsize", "0.7", "--pctsize", "0.7", "--passonly", "--refdist", "50"],
-        '26': ["--pctseq", "0", "--pctsize", "0.7", "--pctovl", "0", "--refdist", "500", "--passonly"],
+        '26': ["--pctseq", "0", "--pctsize", "0.7", "--pctovl", "0", "--refdist", "500", "--passonly"], # original (12) without --typeignore!
+        '28': ["--pctseq", "0", "--pctsize", "0.7", "--pctovl", "0", "--refdist", "500", "--passonly", "--dup-to-ins"],
     }
 
     for key, settings in dict_settings.items():
